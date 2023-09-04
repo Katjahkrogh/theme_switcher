@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Londrina Solid", cursive;
+}
+
+[data-theme="Hawaii"] {
+  --baggrundBody: pink;
+  --baggrundHeader: lightgreen;
+  --baggrundContent: lightBlue;
+  --baggrundFooter: orange;
+}
+
+[data-theme="Dark"] {
+  --baggrundBody: black;
+  --baggrundHeader: darkGrey;
+  --baggrundContent: darkGreen;
+  --baggrundFooter: darkGrey;
+}
+
+[data-theme="Light"] {
+  --baggrundBody: white;
+  --baggrundHeader: lightgrey;
+  --baggrundContent: beige;
+  --baggrundFooter: #f9f9f9;
+}
+
+body {
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: var(--baggrundBody);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: var(--baggrundHeader);
+}
+
+#overskrift {
+  font-size: 50px;
+}
+
+.content {
+  padding-top: 20%;
+  padding-bottom: 20%;
+  text-align: center;
+  font-size: 25px;
+  background-color: var(--baggrundContent);
+}
+footer {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 2%;
+  font-size: 20px;
+  background-color: var(--baggrundFooter);
+}
